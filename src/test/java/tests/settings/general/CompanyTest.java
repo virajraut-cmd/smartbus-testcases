@@ -65,110 +65,110 @@ public class CompanyTest extends TestBase {
                 .verifyTheCreatedAndDeleteCompany();
     }
 
-//    @Test
-//    public void shouldCreateAndDeleteCompanyWithAllRuleTabDetails() {
-//        companyPage.createCompanyUser()
-//                .addMyAccountDetailsOfCompany()
-//                .addRuleOfCompany()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldCreateAndDeleteCompanyWithAllUserSettingsTabDetails() {
-//        companyPage.createCompanyUser()
-//                .addMyAccountDetailsOfCompany()
-//                .addUserSettingOfCompany()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldCreateAndDeleteCompanyWithAllMapTabDetails() {
-//        companyPage.createCompanyUser()
-//                .addMyAccountDetailsOfCompany()
-//                .addMapOfCompany()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldCreateAndRemoveCompanyWithDesignationDepartmentTaskAndExpenseDetails() {
-//        companyPage.createCompanyUser()
-//                .addMyAccountDetailsOfCompany()
-//                .addDesignationOfCompany()
-//                .addDepartmentOfCompany()
-//                .addTaskCategoryOfCompany()
-//                .addExpenseCategoryOfCompany()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldCreateAndRemoveCompanyWithShiftFinanceApproverSosCategoryAndLeaveReasonDetails() {
-//        companyPage.createCompanyUser()
-//                .addMyAccountDetailsOfCompany()
-//                .addShiftOfCompany()
-//                .addFinanceApproverOfCompany()
-//                .addSosCategoryOfCompany()
-//                .addLeaveReasonOfCompany()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldCreateEditAndDeleteCompanySuccessfully() {
-//        companyPage.createCompanyUser()
-//                .addMyAccountDetailsOfCompany()
-//                .saveButtonOfCompany()
-//                .searchCompanyUser()
-//                .clickOnCreatedCompanyUser()
-//                .editCompanyDetails()
-//                .verifyThatCompanyDetailsAreEdited()
-//                .editSearchCompanyUser()
-//                .clickOnEditedCompanyUser()
-//                .deleteCompanyUser()
-//                .editSearchCompanyUser()
-//                .verifyCompanyUserIsDeleted();
-//    }
-//
-//    @Test
-//    public void shouldShowValidationMessagesWhenCreatingCompanyWithInvalidData() {
-//        companyPage.createCompanyUser()
-//                .fillCompanyDetailsWithValidation()
-//                .fillCompanyRuleDetailsWithValidation()
-//                .fillCompanyShiftDetailsWithValidation()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldCreateAndDeleteCompanyWhenUserAlreadyExists() {
-//        companyPage.createCompanyUser()
-//                .fillCompanyDetailsWithDuplicateValidation()
-//                .saveButtonOfCompany()
-//                .verifyTheCreatedAndDeleteCompany();
-//    }
-//
-//    @Test
-//    public void shouldDisplayAllFieldsOnCreateCompanyPage() {
-//        companyPage.createCompanyUser()
-//                .verifyThatMyAccountsTabAllTheFieldsArePresent()
-//                .verifyThatRuleTabOfCompanyAllTheFieldsArePresent()
-//                .verifyThatUserSettingTabAllTheFieldsArePresent()
-//                .verifyThatDataAccessTabAllTheFieldsArePresent()
-//                .verifyThatMapTabAllTheFieldsArePresent()
-//                .verifyThatEmailTabAllTheFieldsArePresent()
-//                .verifyThatSmsTabAllTheFieldsArePresent()
-//                .verifyThatDesignationTabAllTheFieldsArePresent()
-//                .verifyThatDepartmentTabAllTheFieldsArePresent()
-//                .verifyThatTaskCategoryTabAllTheFieldsArePresent()
-//                .verifyThatExpenseCategoryTabAllTheFieldsArePresent()
-//                .verifyThatShiftTabOfCompanyAllTheFieldsArePresent()
-//                .verifyThatFinanceApproverTabAllTheFieldsArePresent()
-//                .verifyThatSosCategoryTabAllTheFieldsArePresent()
-//                .verifyThatLeaveReasonTabAllTheFieldsArePresent();
-//    }
+    @Test
+    public void shouldCreateAndDeleteCompanyWithAllRuleTabDetails() {
+        companyPage.createCompanyUser()
+                .addMyAccountDetailsOfCompany()
+                .addRuleOfCompany()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldCreateAndDeleteCompanyWithAllUserSettingsTabDetails() {
+        companyPage.createCompanyUser()
+                .addMyAccountDetailsOfCompany()
+                .addUserSettingOfCompany()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldCreateAndDeleteCompanyWithAllMapTabDetails() {
+        companyPage.createCompanyUser()
+                .addMyAccountDetailsOfCompany()
+                .addMapOfCompany()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldCreateAndRemoveCompanyWithDesignationDepartmentTaskAndExpenseDetails() {
+        companyPage.createCompanyUser()
+                .addMyAccountDetailsOfCompany()
+                .addDesignationOfCompany()
+                .addDepartmentOfCompany()
+                .addTaskCategoryOfCompany()
+                .addExpenseCategoryOfCompany()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldCreateAndRemoveCompanyWithShiftFinanceApproverSosCategoryAndLeaveReasonDetails() {
+        companyPage.createCompanyUser()
+                .addMyAccountDetailsOfCompany()
+                .addShiftOfCompany()
+                .addFinanceApproverOfCompany()
+                .addSosCategoryOfCompany()
+                .addLeaveReasonOfCompany()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldCreateEditAndDeleteCompanySuccessfully() {
+        companyPage.createCompanyUser()
+                .addMyAccountDetailsOfCompany()
+                .saveButtonOfCompany()
+                .searchCompanyUser()
+                .clickOnCreatedCompanyUser()
+                .editCompanyDetails()
+                .verifyThatCompanyDetailsAreEdited()
+                .editSearchCompanyUser()
+                .clickOnEditedCompanyUser()
+                .deleteCompanyUser()
+                .editSearchCompanyUser()
+                .verifyCompanyUserIsDeleted();
+    }
+
+    @Test
+    public void shouldShowValidationMessagesWhenCreatingCompanyWithInvalidData() {
+        companyPage.createCompanyUser()
+                .fillCompanyDetailsWithValidation()
+                .fillCompanyRuleDetailsWithValidation()
+                .fillCompanyShiftDetailsWithValidation()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldCreateAndDeleteCompanyWhenUserAlreadyExists() {
+        companyPage.createCompanyUser()
+                .fillCompanyDetailsWithDuplicateValidation()
+                .saveButtonOfCompany()
+                .verifyTheCreatedAndDeleteCompany();
+    }
+
+    @Test
+    public void shouldDisplayAllFieldsOnCreateCompanyPage() {
+        companyPage.createCompanyUser()
+                .verifyThatMyAccountsTabAllTheFieldsArePresent()
+                .verifyThatRuleTabOfCompanyAllTheFieldsArePresent()
+                .verifyThatUserSettingTabAllTheFieldsArePresent()
+                .verifyThatDataAccessTabAllTheFieldsArePresent()
+                .verifyThatMapTabAllTheFieldsArePresent()
+                .verifyThatEmailTabAllTheFieldsArePresent()
+                .verifyThatSmsTabAllTheFieldsArePresent()
+                .verifyThatDesignationTabAllTheFieldsArePresent()
+                .verifyThatDepartmentTabAllTheFieldsArePresent()
+                .verifyThatTaskCategoryTabAllTheFieldsArePresent()
+                .verifyThatExpenseCategoryTabAllTheFieldsArePresent()
+                .verifyThatShiftTabOfCompanyAllTheFieldsArePresent()
+                .verifyThatFinanceApproverTabAllTheFieldsArePresent()
+                .verifyThatSosCategoryTabAllTheFieldsArePresent()
+                .verifyThatLeaveReasonTabAllTheFieldsArePresent();
+    }
 
     @AfterMethod
     public void tearDownAfterTest() {

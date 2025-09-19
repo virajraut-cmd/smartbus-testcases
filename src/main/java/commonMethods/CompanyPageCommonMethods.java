@@ -320,7 +320,9 @@ public class CompanyPageCommonMethods {
         WebElement deleteButton = waitUtils.waitForElementToBeClickable(CompanyPageLocators.DELETE_BUTTON);
         deleteButton.click();
         waitUtils.waitForMilliseconds(1000);
-        commonMethods.acceptAlert();
+        iframe.switchToDivFrame();
+        WebElement bulkokbutton = waitUtils.waitForElementToBeClickable(By.xpath("//input[@id='bulkDeleteOKButton']"));
+        bulkokbutton.click();
         logger.info("Exiting deleteCompanyButton method");
     }
 

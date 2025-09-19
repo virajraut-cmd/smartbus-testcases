@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-16T22:02:30 IST" name="Default suite" finished-at="2025-09-16T22:03:02 IST" duration-ms="31924">
+  <suite started-at="2025-09-19T23:49:28 IST" name="Default suite" finished-at="2025-09-19T23:50:36 IST" duration-ms="68050">
     <groups>
     </groups>
-    <test started-at="2025-09-16T22:02:30 IST" name="Default test" finished-at="2025-09-16T22:03:02 IST" duration-ms="31924">
+    <test started-at="2025-09-19T23:49:28 IST" name="Default test" finished-at="2025-09-19T23:50:36 IST" duration-ms="68050">
       <class name="tests.settings.general.CompanyTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-16T22:02:31 IST" name="setUp" finished-at="2025-09-16T22:02:38 IST" duration-ms="7193" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-19T23:49:28 IST" name="setUp" finished-at="2025-09-19T23:49:38 IST" duration-ms="9532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="shouldCreateAndDeleteCompanyWithAllMyAccountDetails()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-16T22:02:38 IST" name="shouldCreateAndDeleteCompanyWithAllMyAccountDetails" finished-at="2025-09-16T22:03:02 IST" duration-ms="24182" status="PASS">
+        <test-method signature="shouldCreateAndDeleteCompanyWithAllMyAccountDetails()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-19T23:49:38 IST" name="shouldCreateAndDeleteCompanyWithAllMyAccountDetails" finished-at="2025-09-19T23:50:36 IST" duration-ms="58206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldCreateAndDeleteCompanyWithAllMyAccountDetails -->
-        <test-method is-config="true" signature="tearDownAfterTest()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-16T22:03:02 IST" name="tearDownAfterTest" finished-at="2025-09-16T22:03:02 IST" duration-ms="526" status="PASS">
+        <test-method is-config="true" signature="tearDownAfterTest()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-19T23:50:36 IST" name="tearDownAfterTest" finished-at="2025-09-19T23:50:36 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-16T22:03:02 IST" name="tearDown" finished-at="2025-09-16T22:03:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.settings.general.CompanyTest@42463763]" started-at="2025-09-19T23:50:36 IST" name="tearDown" finished-at="2025-09-19T23:50:36 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

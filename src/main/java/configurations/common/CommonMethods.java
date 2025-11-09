@@ -418,5 +418,95 @@ public class CommonMethods {
         Assert.assertTrue(label.isDisplayed(), "Label was not displayed.");
         Assert.assertEquals(label.getText().trim(), expectedText, "Label text does not match.");
     }
+    
+    private static final String[] INDIAN_CITIES = {
+	        "Mumbai", "Delhi", "Bengaluru", "Hyderabad", "Ahmedabad",
+	        "Chennai", "Kolkata", "Pune", "Jaipur", "Lucknow",
+	        "Kanpur", "Nagpur", "Indore", "Thane", "Bhopal",
+	        "Visakhapatnam", "Patna", "Vadodara", "Ghaziabad", "Ludhiana"
+	    };
+    
+    public String RandomCityName()
+    {
+    	Random random = new Random();
+        int index = random.nextInt(INDIAN_CITIES.length);
+        return INDIAN_CITIES[index];
+    }
+    
+    public static String getRandomZipCode() {
+        Random random = new Random();
+        // Generate a random number between 10000000 and 99999999 (8 digits)
+        int zip = 10000000 + random.nextInt(90000000);
+        return String.valueOf(zip);
+    }
+    
+    private static final String[] STREETS = {
+            "MG Road", "Brigade Road", "Park Street", "Anna Salai",
+            "Linking Road", "Rajpath", "FC Road", "Bannerghatta Road",
+            "Camac Street", "LBS Marg"
+        };
+
+        private static final String[] AREAS = {
+            "Andheri", "Koramangala", "Connaught Place", "Banjara Hills",
+            "Salt Lake", "Jubilee Hills", "Malad", "Indiranagar",
+            "Kothrud", "Civil Lines"
+        };
+
+        private static final String[] CITIES = {
+            "Mumbai", "Delhi", "Bengaluru", "Hyderabad", "Chennai",
+            "Kolkata", "Pune", "Jaipur", "Lucknow", "Ahmedabad"
+        };
+
+    
+        public static String getRandomAddress() {
+            Random random = new Random();
+
+            int houseNo = 1 + random.nextInt(999); // 1 to 999
+            String street = STREETS[random.nextInt(STREETS.length)];
+            String area = AREAS[random.nextInt(AREAS.length)];
+            String city = CITIES[random.nextInt(CITIES.length)];
+
+            // Generate 6-digit Indian-style pincode
+            int pincode = 100000 + random.nextInt(900000);
+
+            return houseNo + ", " + street + ", " + area + ", " + city + " - " + pincode;
+        }
+        
+        public static String getRandomFaxNumber() {
+            Random random = new Random();
+
+            // Country code for India: +91
+            String countryCode = "+91";
+
+            // Generate a random 10-digit number (like a landline/fax format)
+            long number = 1000000000L + (long)(random.nextDouble() * 9000000000L);
+
+            return countryCode + "-" + number;
+        }
+        
+        
+        private static final String ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        private static final String NUMBERS = "0123456789";
+
+        public static String getRandomBranchCode(int length) {
+            Random random = new Random();
+            StringBuilder code = new StringBuilder();
+
+            // Mix of letters and numbers
+            for (int i = 0; i < length; i++) {
+                if (random.nextBoolean()) {
+                    // Add a random letter
+                    code.append(ALPHABETS.charAt(random.nextInt(ALPHABETS.length())));
+                } else {
+                    // Add a random number
+                    code.append(NUMBERS.charAt(random.nextInt(NUMBERS.length())));
+                }
+            }
+
+            return code.toString();
+        }
+    
+    
+    
 	
 }

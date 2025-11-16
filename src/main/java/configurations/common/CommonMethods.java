@@ -48,16 +48,36 @@ public class CommonMethods {
         }
         return mobileNumber.toString();
     }
-
-    /**
-     * Generates a random 4-digit number.
-     *
-     * @return Random 4-digit number as a String.
-     */
+    
+    
+	    public static String getBranchName() {
+	        String[] branches = {
+	            "Head Office",
+	            "North Zone",
+	            "South Zone",
+	            "East Zone",
+	            "West Zone",
+	            "Central Branch",
+	            "City Branch",
+	            "Corporate Branch",
+	            "Regional Office",
+	            "Main Branch"
+	        };
+	
+	        Random random = new Random();
+	        return branches[random.nextInt(branches.length)];
+	    }
+	    
+	
+	    /**
+	     * Generates a random 4-digit number.
+	     *
+	     * @return Random 4-digit number as a String.
+	     */
     public static String generateRandomNumber() {
         StringBuilder mobileNumber = new StringBuilder("3");
         for (int i = 0; i < 3; i++) {
-            mobileNumber.append(RANDOM.nextInt(9));
+        	mobileNumber.append(RANDOM.nextInt(9));
         }
         return mobileNumber.toString();
     }
@@ -505,8 +525,55 @@ public class CommonMethods {
 
             return code.toString();
         }
+        
+        
+        private static final String[] INDIAN_CITIES1 = {
+                "Mumbai", "Delhi", "Bengaluru", "Hyderabad", "Ahmedabad",
+                "Chennai", "Kolkata", "Pune", "Jaipur", "Surat",
+                "Lucknow", "Kanpur", "Nagpur", "Indore", "Thane",
+                "Bhopal", "Visakhapatnam", "Patna", "Vadodara", "Ghaziabad",
+                "Ludhiana", "Agra", "Nashik", "Faridabad", "Meerut",
+                "Rajkot", "Kalyan", "Vasai-Virar", "Varanasi", "Srinagar",
+                "Aurangabad", "Dhanbad", "Amritsar", "Navi Mumbai", "Allahabad",
+                "Ranchi", "Howrah", "Coimbatore", "Jabalpur", "Gwalior"
+            };
+
+            public static String getRandomIndianCity() {
+                Random random = new Random();
+                return INDIAN_CITIES[random.nextInt(INDIAN_CITIES1.length)];
+            }
+            
+            
+        public static String getRandomPinCode() {
+                Random random = new Random();
+
+                // Indian PIN codes are 6 digits and cannot start with 0
+                int pin = 100000 + random.nextInt(900000);
+
+                return String.valueOf(pin);
+            }
     
-    
+        private static final String ALPHANUM = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        public static String generateSchoolRegNumber() {
+            StringBuilder sb = new StringBuilder();
+
+            // Prefix (optional)
+            sb.append("SCH-");
+
+            // Year (optional)
+            sb.append(java.time.Year.now().getValue()).append("-");
+
+            // Random 5-character alphanumeric string
+            Random random = new Random();
+            for (int i = 0; i < 5; i++) {
+                int index = random.nextInt(ALPHANUM.length());
+                sb.append(ALPHANUM.charAt(index));
+            }
+
+            return sb.toString();
+        }
+
     
 	
 }

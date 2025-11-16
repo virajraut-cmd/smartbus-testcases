@@ -21,8 +21,8 @@ public class WaitUtils {
 	    }
 
 	    // --- Clickable ---
-	    public WebElement waitForElementToBeClickable(By locator) {
-	        return waitForElementToBeClickable(locator, DEFAULT_TIMEOUT);
+	    public WebElement waitForElementToBeClickable(By searchbuttononoverviewscreen) {
+	        return waitForElementToBeClickable(searchbuttononoverviewscreen, DEFAULT_TIMEOUT);
 	    }
 	    public WebElement waitForElementToBeClickable(By locator, long timeoutSeconds) {
 	        return new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))

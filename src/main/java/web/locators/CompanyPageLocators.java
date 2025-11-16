@@ -25,8 +25,7 @@ public class CompanyPageLocators {
     public static final String MOBILE_ACCESS_ALL = "//input[@id='mobile_access_1']";
     public static final String ADDRESS_FROM_MAP_PROVIDER_CHECKBOX = "//input[@id='address_from_map0_1']";
     public static final String DEFAULT_MAP_CHECKBOX = "//input[@id='default_map0_1']";
-    public static final By RESELLER_DROPDOWN = By.xpath("//div[@id='reseller_entity_id_chosen']");
-    public static final String RESELLER_DROPDOWN_OPTION = "//div[@id='reseller_entity_id_chosen']//div[@class='chosen-drop']//ul//li[@title=\"%s\"]";
+   
     public static final By COMPANY_DETAILS_COUNTRY_DROPDOWN = By.xpath("//div[@id='country_chosen']");
     public static final String COMPANY_DETAILS_COUNTRY_DROPDOWN_OPTION = "//div[@id='country_chosen']//div[@class='chosen-drop']//ul//li[@title=\"%s\"]";
     public static final By COMPANY_DETAILS_STATE_DROPDOWN = By.xpath("//div[@id='state_chosen']");
@@ -102,4 +101,7 @@ public class CompanyPageLocators {
     public static By CLOSE_BUTTON_OF_RULE_TAB = By.xpath("//div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable']//span[@class='ui-icon ui-icon-closethick']");
     public static By school_Confirmation_Checkbox = By.xpath("//input[@id=\"school_check_box\"]");
     public static By school_confirmation_save_button = By.xpath("//div[@class=\'buttons-box-save\']//input[@id=\'save_button\']");
+    public static final By RESELLER_DROPDOWN = By.xpath("//div[@id='reseller_entity_id_chosen']");
+    public static final String RESELLER_DROPDOWN_OPTION = "//div[@id='reseller_entity_id_chosen']//div[@class='chosen-drop']//ul//li[@title=\"%s\"]";
+
 }

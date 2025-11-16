@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.settings.general.CompanySubUserTest">
+      <class name="tests.settings.general.BranchTest">
         <methods>
-          <include name="shouldCreateCompanySubUserWhenAllDetailsAreProvided"/>
+          <include name="shouldCreateAndDeleteBranchWithAllDetails"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.settings.general.CompanySubUserTest -->
+      </class> <!-- tests.settings.general.BranchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
